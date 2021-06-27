@@ -26,7 +26,7 @@
     "test-cov": "make test-cov",
     "examples": "make examples"
   },
-  "homepage": "https://github.com/stdlib-js/stdlib",
+  "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
     "url": "git://github.com/stdlib-js/nlp-lda.git"
