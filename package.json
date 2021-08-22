@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/nlp-lda",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Latent Dirichlet Allocation via collapsed Gibbs sampling.",
   "license": "Apache-2.0",
   "author": {
