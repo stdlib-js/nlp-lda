@@ -210,7 +210,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -223,8 +223,8 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/nlp-lda.svg
 [npm-url]: https://npmjs.org/package/@stdlib/nlp-lda
 
-[test-image]: https://github.com/stdlib-js/nlp-lda/actions/workflows/test.yml/badge.svg
-[test-url]: https://github.com/stdlib-js/nlp-lda/actions/workflows/test.yml
+[test-image]: https://github.com/stdlib-js/nlp-lda/actions/workflows/test.yml/badge.svg?branch=main
+[test-url]: https://github.com/stdlib-js/nlp-lda/actions/workflows/test.yml?query=branch:main
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/nlp-lda/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/nlp-lda?branch=main
