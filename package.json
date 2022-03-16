@@ -1,0 +1,32 @@
+{
+  "name": "@stdlib/nlp-lda",
+  "version": "0.0.0",
+  "description": "Latent Dirichlet Allocation via collapsed Gibbs sampling.",
+  "license": "Apache-2.0",
+  "main": "./bundle.js",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/nlp-lda.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "nlp",
+    "text mining",
+    "clustering",
+    "unsupervised",
+    "learning",
+    "topic",
+    "model",
+    "mixed-membership",
+    "bayesian",
+    "mcmc"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
