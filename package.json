@@ -47,7 +47,7 @@
     "@stdlib/math-base-special-floor": "^0.0.8",
     "@stdlib/nlp-tokenize": "^0.0.11",
     "@stdlib/random-base-randu": "^0.0.8",
-    "@stdlib/string-format": "^0.0.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.0.2",
     "@stdlib/utils-define-nonenumerable-read-only-property": "^0.0.7",
     "@stdlib/utils-define-read-only-property": "^0.0.8"
   },
