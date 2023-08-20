@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/lda"
-click B href "https://github.com/stdlib-js/nlp-lda/tree/main"
-click C href "https://github.com/stdlib-js/nlp-lda/tree/production"
-click D href "https://github.com/stdlib-js/nlp-lda/tree/esm"
-click E href "https://github.com/stdlib-js/nlp-lda/tree/deno"
-click F href "https://github.com/stdlib-js/nlp-lda/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/lda"
+%% click B href "https://github.com/stdlib-js/nlp-lda/tree/main"
+%% click C href "https://github.com/stdlib-js/nlp-lda/tree/production"
+%% click D href "https://github.com/stdlib-js/nlp-lda/tree/esm"
+%% click E href "https://github.com/stdlib-js/nlp-lda/tree/deno"
+%% click F href "https://github.com/stdlib-js/nlp-lda/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/nlp/lda

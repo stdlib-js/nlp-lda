@@ -34,6 +34,12 @@ on:
         type: boolean
         default: true
 
+  # Run workflow upon completion of `publish` workflow run:
+  workflow_run:
+    workflows: ["publish"]
+    types: [completed]
+
+
 # Concurrency group to prevent multiple concurrent executions:
 concurrency:
   group: productionize
@@ -76,28 +82,14 @@ jobs:
         id: transform-error-messages
         uses: stdlib-js/transform-errors-action@main
 
-      # Format error messages:
-      - name: 'Replace double quotes with single quotes in rewritten format string error messages'
-        run: |
-          find . -name "*.js" -exec sed -E -i "s/Error\( format\( \"([a-zA-Z0-9]+)\"/Error\( format\( '\1'/g" {} \;
-
-      # Format string literal error messages:
-      - name: 'Replace double quotes with single quotes in rewritten string literal error messages'
-        run: |
-          find . -name "*.js" -exec sed -E -i "s/Error\( format\(\"([a-zA-Z0-9]+)\"\)/Error\( format\( '\1' \)/g" {} \;
-
-      # Format code:
-      - name: 'Replace double quotes with single quotes in inserted `require` calls'
-        run: |
-          find . -name "*.js" -exec sed -E -i "s/require\( ?\"@stdlib\/error-tools-fmtprodmsg\" ?\);/require\( '@stdlib\/error-tools-fmtprodmsg' \);/g" {} \;
-
       # Change `@stdlib/string-format` to `@stdlib/error-tools-fmtprodmsg` in package.json if the former is a dependency, otherwise insert it as a dependency:
       - name: 'Update dependencies in package.json'
         run: |
+          PKG_VERSION=$(npm view @stdlib/error-tools-fmtprodmsg version)
           if grep -q '"@stdlib/string-format"' package.json; then
-            sed -i "s/\"@stdlib\/string-format\"/\"@stdlib\/error-tools-fmtprodmsg\"/g" package.json
+            sed -i "s/\"@stdlib\/string-format\": \"^.*\"/\"@stdlib\/error-tools-fmtprodmsg\": \"^$PKG_VERSION\"/g" package.json
           else
-            node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^0.0.x'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
+            node -e "var pkg = require( './package.json' ); pkg.dependencies[ '@stdlib/error-tools-fmtprodmsg' ] = '^$PKG_VERSION'; require( 'fs' ).writeFileSync( 'package.json', JSON.stringify( pkg, null, 2 ) );"
           fi
 
       # Configure git:
@@ -342,7 +334,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -513,7 +505,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
@@ -690,7 +682,7 @@ jobs:
 
       # Send status to Slack channel if job fails:
       - name: 'Send status to Slack channel in case of failure'
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         with:
           status: ${{ job.status }}
           steps: ${{ toJson(steps) }}
