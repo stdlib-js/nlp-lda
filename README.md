@@ -50,6 +50,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+lda = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/nlp-lda/tags). For example,
+
+```javascript
 lda = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.1.0-umd/browser.js' )
 ```
 
@@ -62,7 +67,7 @@ var lda = require( 'path/to/vendor/umd/nlp-lda/index.js' )
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -144,7 +149,7 @@ var words = model.getTerms( 0, 3 );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
