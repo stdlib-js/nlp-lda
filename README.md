@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@deno/mod.js';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.0-deno/mod.js';
 ```
 
 #### lda( docs, K\[, options] )
@@ -117,7 +117,7 @@ import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@deno/mod.j
 import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@deno/mod.js';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@deno/mod.js';
 import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@deno/mod.js';
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@deno/mod.js';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.0-deno/mod.js';
 
 var speeches;
 var words;
