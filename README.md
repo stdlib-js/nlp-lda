@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/nlp-lda/tags). For example,
+
+```javascript
 import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.0-esm/index.mjs';
 ```
 
@@ -122,7 +127,7 @@ import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.
 import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@esm/index.mjs';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@esm/index.mjs';
 import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@esm/index.mjs';
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.0-esm/index.mjs';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@esm/index.mjs';
 
 var speeches;
 var words;
