@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@esm/index.mjs';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.1-esm/index.mjs';
 ```
 
 #### lda( docs, K\[, options] )
@@ -122,7 +122,7 @@ import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@esm/index.
 import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@esm/index.mjs';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@esm/index.mjs';
 import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@esm/index.mjs';
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@esm/index.mjs';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.1-esm/index.mjs';
 
 var speeches;
 var words;
