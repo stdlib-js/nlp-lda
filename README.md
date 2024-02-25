@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/nlp-lda/tags). For example,
+
+```javascript
 import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.1-deno/mod.js';
 ```
 
@@ -117,7 +122,7 @@ import sotu from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-sotu@deno/mod.j
 import roundn from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@deno/mod.js';
 import stopwords from 'https://cdn.jsdelivr.net/gh/stdlib-js/datasets-stopwords-en@deno/mod.js';
 import lowercase from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-lowercase@deno/mod.js';
-import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@v0.2.1-deno/mod.js';
+import lda from 'https://cdn.jsdelivr.net/gh/stdlib-js/nlp-lda@deno/mod.js';
 
 var speeches;
 var words;
