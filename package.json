@@ -44,7 +44,7 @@
     "@stdlib/assert-is-positive-integer": "^0.2.1",
     "@stdlib/assert-is-positive-number": "^0.2.1",
     "@stdlib/assert-is-string-array": "^0.2.1",
-    "@stdlib/math-base-special-floor": "^0.2.1",
+    "@stdlib/math-base-special-floor": "^0.2.2",
     "@stdlib/nlp-tokenize": "^0.2.1",
     "@stdlib/random-base-randu": "^0.2.1",
     "@stdlib/string-format": "^0.2.1",
