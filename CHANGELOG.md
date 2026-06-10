@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-05-18)
+## Unreleased (2026-06-10)
 
 <section class="issues">
 
@@ -24,6 +24,7 @@ This release closes the following issue:
 
 <details>
 
+-   [`dd5048f`](https://github.com/stdlib-js/stdlib/commit/dd5048fdd2debb2b092d5847e29572df834be784) - **docs:** update TypeScript documentation and fix whitespace in `nlp/lda` declarations [(#12730)](https://github.com/stdlib-js/stdlib/pull/12730) _(by Philipp Burckhardt)_
 -   [`6277feb`](https://github.com/stdlib-js/stdlib/commit/6277feb1c374f6171e19c631c309384b2f2e2c75) - **chore:** fix JavaScript lint errors [(#10701)](https://github.com/stdlib-js/stdlib/pull/10701) _(by Aniket Sonawane)_
 
 </details>
@@ -36,9 +37,10 @@ This release closes the following issue:
 
 ### Contributors
 
-A total of 1 person contributed to this release. Thank you to this contributor:
+A total of 2 people contributed to this release. Thank you to the following contributors:
 
 -   Aniket Sonawane
+-   Philipp Burckhardt
 
 </section>
 
